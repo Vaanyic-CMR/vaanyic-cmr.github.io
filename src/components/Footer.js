@@ -1,3 +1,5 @@
+import logo from "../logo.svg"
+
 const Footer = props => {
     return (
         <footer className="p-2 bg-light border border-secondary rounded mt-5">
@@ -28,6 +30,30 @@ const Footer = props => {
                         style={ {width: "20px"} }
                     />
                     <a href="https://twitter.com/Tenkara37">@Tenkara37</a>
+                </div>
+            </div>
+            <div className="row mt-3">
+            <div className="col">
+                    <img
+                        src={ logo }
+                        alt="React Icon"
+                        style={ {width: "40px"} }
+                    />
+                    <a
+                        href="https://reactjs.org/"
+                        className="text-secondary"
+                        >Powered By React</a>
+                </div>
+                <div className="col">
+                    <img
+                        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                        alt="Bootstrap Icon"
+                        style={ {width: "30px"} }
+                    />
+                    <a
+                        href="https://getbootstrap.com/"
+                        className="text-secondary ms-1"
+                        >Powered By Bootstrap</a>
                 </div>
             </div>
         </footer>

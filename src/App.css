@@ -1,5 +1,25 @@
-.App {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding: 0 20%;
+body {
+    background-color: silver;
+}
+
+@media (max-width: 3000px) {
+    .App {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 0 20%;
+    }
+}
+@media (max-width: 1600px) {
+    .App {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 0 10%;
+    }
+}
+@media (max-width: 480px) {
+    .App{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 0;
+    }
 }

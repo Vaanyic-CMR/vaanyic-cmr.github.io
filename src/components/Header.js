@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const Header = props => {
-    const { homePage, pythonPage, javaPage, mernPage } = props;
+    const { homePage, pythonPage, javaPage, mernPage, projectPage } = props;
 
     return (
         <header
-            className="navbar navbar-expand-lg navbar-light bg-light border border-secondary rounded ps-3 pe-3 mb-5"
+            className="navbar navbar-expand-sm navbar-light bg-light border border-secondary rounded ps-3 pe-3 mb-5"
         >
             <div className="container-fluid">
                 <h1 className="navbar-brand">Caleb M. Rank</h1>
@@ -38,6 +38,13 @@ const Header = props => {
                             mernPage?
                             <Link className="nav-link active" to="/mern">MERN</Link>
                             :<Link className="nav-link" to="/mern">MERN</Link>
+                        }
+                    </li>
+                    <li className="nav-item">
+                        {
+                            projectPage?
+                            <Link className="nav-link active" to="/projects">Projects</Link>
+                            :<Link className="nav-link" to="/projects">Projects</Link>
                         }
                     </li>
                 </ul>
