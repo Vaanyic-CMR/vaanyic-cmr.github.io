@@ -8,7 +8,7 @@ const Header = props => {
             className="navbar navbar-expand-sm navbar-light bg-light border border-secondary rounded ps-3 pe-3 mb-5"
         >
             <div className="container-fluid">
-                <h1 className="navbar-brand">Caleb M. Rank</h1>
+                <h1 className="navbar-brand fs-2">Caleb M. Rank</h1>
             </div>
             <div className="collapse navbar-collapse">
                 <ul className="navbar-nav">
