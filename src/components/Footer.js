@@ -2,7 +2,7 @@ import logo from "../logo.svg"
 
 const Footer = props => {
     return (
-        <footer className="p-2 bg-light border border-secondary rounded mt-5">
+        <footer className="p-3 bg-light border border-secondary rounded mt-5">
             <div className="row">
                 <p>calebmrank@gmail.com | (970) 394-4974</p>
             </div>

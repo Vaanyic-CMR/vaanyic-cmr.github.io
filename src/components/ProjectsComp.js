@@ -5,15 +5,16 @@ const ProjectsComp = props => {
             style={ {textAlign: "left"} }
         >
             <img
-                className=" mb-5 border border-secondary rounded"
+                className=" mb-5 border border-secondary rounded p-1"
                 style={ {width: "100%", height: "200px", objectFit: "cover" } }
                 src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
             ></img>
             <div className="mx-5 my-4">
                 <h2>Snack Shack Management System | <small className="text-muted">Position: Solo-Project/Owner</small></h2>
                 <p className="lead ms-5">
-                    This system will store various data related to SJBC's Snack Shack.
-                    It tracks inventory, camper and staff accounts, as well as any transaction history whether from saved accounts or other forms of payment.
+                    This system will store various data related to San Juan Bible Camp's Snack Shack.
+                    It tracks inventory, camper and staff accounts, including monetary account balances.
+                    It also tracks any transaction history whether from saved accounts or other forms of payment.
                     The program will build a shopping list for low inventory that needs to be restocked based on user determined thresholds.
                     (Still under development)
                 </p>
