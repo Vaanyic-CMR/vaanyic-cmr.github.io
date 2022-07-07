@@ -1,17 +1,39 @@
 const HomeComp = props => {
     return (
         <div
-            className="p-3 bg-light border border-secondary rounded d-flex"
+            className="p-3 bg-light border border-secondary rounded"
             style={ {textAlign: "left"} }
         >
             <img
                 className="border border-secondary rounded text-start"
-                src="https://media-exp1.licdn.com/dms/image/C5603AQG82RGy4oSYOw/profile-displayphoto-shrink_800_800/0/1634251846215?e=1657152000&v=beta&t=SWLzJgGdJ3DfvFpjCgmaHkO7yt64UXG4QWl0DqOYI9k"
-                alt="Personal"
-                style={ {height: "400px"} }
+                src="https://media-exp2.licdn.com/dms/image/C5616AQGmt9WxAYADpg/profile-displaybackgroundimage-shrink_350_1400/0/1634251789632?e=1662595200&v=beta&t=3UhhqCAklIMR4opFqmR4EGpI2_EZD02hsIrUWsrce1A"
+                alt="Banner"
+                style={ {width: "100%"} }
             />
-            <div className="mx-5">
-                Lordem
+            <div className="m-5">
+                <h3>Overview</h3>
+                <p className="mx-4">
+                    My name is Caleb M. Rank. I was born in August, 1998 and am 24 years old.
+                    I currently live in Southwest Colorado near Mancos CO. 
+                    I am a former college student who is now a full stack developer with knowledge in Python, Java, and MERN; but I am most proficient in Python.
+                    I am passionate about creating useful applications that people can enjoy and/or will make something in their life easier.
+                </p>
+                <p className="mx-4">
+                    In high school, for most of my 4 years I took dual credit college courses for two reasons.
+                    One, to get a head start on my college education and two, to complete that head start for free.
+                    During this time I found an interest in computer programming and decided that this was what I wanted to do in the future.
+                </p>
+                <p className="mx-4">
+                    I am a hardworking person who, when needing to take risky action, will try to find the most practical and risk free plan to accomplish that action.
+                    In August of 2021, I decided to leave my program at Fort Lewis College in Durango CO, to instead attend a 32 week part-time course in web development with Coding Dojo.
+                    I did this as Coding Dojo was more aligned with my desired career and was significanly less expensive than a degree teaching the same thing.
+                </p>
+                <p className="mx-4">
+                    After graduation, I started attending a local college for a 4 year degree in Computer Engineering.
+                    While attending, I attended part time, stretching my degree completion to 6-9 years, and worked a part-time, night-shift at my local UPS hub.
+                    These two decisions allowed me to fully pay for each semester without loans. This was what I considered to be the most practical plan for my situation and desires at that time.
+                    These decisions also allowed me to minimize any risk should I need to leave.
+                </p>
             </div>
         </div>
     );
