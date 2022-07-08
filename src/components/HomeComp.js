@@ -15,7 +15,7 @@ const HomeComp = props => {
                 <p className="mx-4">
                     My name is Caleb M. Rank. I was born in August, 1998 and am 24 years old.
                     I currently live in Southwest Colorado near Mancos CO. 
-                    I am a former college student who is now a full stack developer with knowledge in Python, Java, and MERN; but I am most proficient in Python.
+                    I am a former college student who is now a full stack developer with knowledge in Python, Java, and MERN.
                     I am passionate about creating useful applications that people can enjoy and/or will make something in their life easier.
                 </p>
                 <p className="mx-4">
@@ -27,12 +27,6 @@ const HomeComp = props => {
                     I am a hardworking person who, when needing to take risky action, will try to find the most practical and risk free plan to accomplish that action.
                     In August of 2021, I decided to leave my program at Fort Lewis College in Durango CO, to instead attend a 32 week part-time course in web development with Coding Dojo.
                     I did this as Coding Dojo was more aligned with my desired career and was significanly less expensive than a degree teaching the same thing.
-                </p>
-                <p className="mx-4">
-                    After graduation, I started attending a local college for a 4 year degree in Computer Engineering.
-                    While attending, I attended part time, stretching my degree completion to 6-9 years, and worked a part-time, night-shift at my local UPS hub.
-                    These two decisions allowed me to fully pay for each semester without loans. This was what I considered to be the most practical plan for my situation and desires at that time.
-                    These decisions also allowed me to minimize any risk should I need to leave.
                 </p>
             </div>
         </div>
