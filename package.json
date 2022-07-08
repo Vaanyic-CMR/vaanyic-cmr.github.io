@@ -1,7 +1,7 @@
 {
   "name": "vaanyic-cmr.github.io",
   "version": "0.1.0",
-  "homepage": "https://Vaanyic-CMR.github.io/vaanyic-cmr.github.io",
+  "homepage": "https://vaanyic-cmr.github.io",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
