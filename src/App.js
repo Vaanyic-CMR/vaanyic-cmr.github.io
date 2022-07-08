@@ -12,14 +12,14 @@ import './App.css';
 function App() {
     return (
         <div className='App'>
-        <BrowserRouter basename='{process.env.PUBLIC_URL}'>
+        <BrowserRouter>
             <Routes>
 
-                <Route path="/" element={ <Home /> }/>
-                <Route path="/python" element={ <Python /> }/>
-                <Route path="/java" element={ <Java /> }/>
-                <Route path="/mern" element={ <MERN /> }/>
-                <Route path="/projects" element={ <Projects /> }/>
+                <Route exact path="/" element={ <Home /> }/>
+                <Route exact path="/python" element={ <Python /> }/>
+                <Route exact path="/java" element={ <Java /> }/>
+                <Route exact path="/mern" element={ <MERN /> }/>
+                <Route exact path="/projects" element={ <Projects /> }/>
 
             </Routes>
         </BrowserRouter>
