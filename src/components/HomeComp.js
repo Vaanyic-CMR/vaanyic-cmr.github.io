@@ -13,7 +13,7 @@ const HomeComp = props => {
             <div className="m-5">
                 <h3>Overview</h3>
                 <p className="mx-4">
-                    My name is Caleb M. Rank. I was born in August, 1998 and am 24 years old.
+                    My name is Caleb M. Rank and I was born in August, 1998.
                     I currently live in Southwest Colorado near Mancos CO. 
                     I am a former college student who is now a full stack developer with knowledge in Python, Java, and MERN.
                     I am passionate about creating useful applications that people can enjoy and/or will make something in their life easier.
