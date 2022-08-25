@@ -1,4 +1,28 @@
-const HomeComp = props => {
+import ImageSlideShow from './sub_components/ImageSlideShow';
+
+
+const images = [
+    {
+        src: require('../images/Certifications/Southwest_CO_eSchool_Diploma.jpg'),
+        altText: 'High School Diploma',
+        // caption: '1',
+        key: 1,
+    },
+    {
+        src: require('../images/Certifications/Pueblo_Community_College_Assosiate_Degree.jpg'),
+        altText: 'Slide 2',
+        // caption: '1',
+        key: 2,
+    },
+    {
+        src: require('../images/Certifications/Coding_Dojo_Certification.png'),
+        altText: 'Slide 3',
+        // caption: '1',
+        key: 3,
+    },
+];
+
+const HomeComp = _props => {
     return (
         <div
             className="p-3 bg-light border border-secondary rounded"
@@ -28,6 +52,7 @@ const HomeComp = props => {
                     In August of 2021, I decided to leave my program at Fort Lewis College in Durango CO, to instead attend a 32 week part-time course in web development with Coding Dojo.
                     I did this as Coding Dojo was more aligned with my desired career and was significanly less expensive than a degree teaching the same thing.
                 </p>
+                <ImageSlideShow images={images}/>
             </div>
         </div>
     );

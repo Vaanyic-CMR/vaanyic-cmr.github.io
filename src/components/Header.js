@@ -1,55 +1,69 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink
+} from 'reactstrap';
 
 const Header = props => {
     const { homePage, pythonPage, javaPage, mernPage, projectPage } = props;
 
+    // Navbar controls
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen)
+
     return (
-        <header
+        <div
             className="navbar navbar-expand-sm navbar-light bg-light border border-secondary rounded ps-3 pe-3 mb-5"
         >
-            <div className="container-fluid">
-                <h1 className="navbar-brand fs-2">Caleb M. Rank</h1>
-            </div>
-            <div className="collapse navbar-collapse">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        {
-                            homePage?
-                            <Link className="nav-link active" to="/">Home</Link>
-                            :<Link className="nav-link" to="/">Home</Link>
-                        }
-                    </li>
-                    <li className="nav-item">
-                        {
-                            pythonPage?
-                            <Link className="nav-link active" to="/python">Python</Link>
-                            :<Link className="nav-link" to="/python">Python</Link>
-                        }
-                    </li>
-                    <li className="nav-item">
-                        {
-                            javaPage?
-                            <Link className="nav-link active" to="/java">Java</Link>
-                            :<Link className="nav-link" to="/java">Java</Link>
-                        }
-                    </li>
-                    <li className="nav-item">
-                        {
-                            mernPage?
-                            <Link className="nav-link active" to="/mern">MERN</Link>
-                            :<Link className="nav-link" to="/mern">MERN</Link>
-                        }
-                    </li>
-                    <li className="nav-item">
-                        {
-                            projectPage?
-                            <Link className="nav-link active" to="/projects">Projects</Link>
-                            :<Link className="nav-link" to="/projects">Projects</Link>
-                        }
-                    </li>
-                </ul>
-            </div>
-        </header>
+            <Navbar style={{ width: "100%" }}>
+                <NavbarBrand className="fs-2">Caleb M. Rank</NavbarBrand>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="justify-content-end" style={{ width: "100%" }} navbar>
+                        <NavItem>
+                            {
+                                homePage?
+                                <NavLink className="active">Home</NavLink>
+                                :<NavLink href="/">Home</NavLink>
+                            }
+                        </NavItem>
+                        <NavItem>
+                            {
+                                pythonPage?
+                                <NavLink className="active">Python</NavLink>
+                                :<NavLink href="/python">Python</NavLink>
+                            }
+                        </NavItem>
+                        <NavItem>
+                            {
+                                javaPage?
+                                <NavLink className="active">Java</NavLink>
+                                :<NavLink href="/java">Java</NavLink>
+                            }
+                        </NavItem>
+                        <NavItem>
+                            {
+                                mernPage?
+                                <NavLink className="active">MERN</NavLink>
+                                :<NavLink href="/mern">MERN</NavLink>
+                            }
+                        </NavItem>
+                        <NavItem>
+                            {
+                                projectPage?
+                                <NavLink className="active">Projects</NavLink>
+                                :<NavLink href="/projects">Projects</NavLink>
+                            }
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
     );
 };
 export default Header;

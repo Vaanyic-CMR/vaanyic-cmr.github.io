@@ -1,7 +1,7 @@
 const JavaComp = props => {
     return (
         <div
-            className="p-3 bg-light border border-secondary rounded d-flex"
+            className="p-3 bg-light border border-secondary rounded d-md-flex"
             style={ {textAlign: "left"} }
         >
             {/* Flask, Django, MySQL */}
