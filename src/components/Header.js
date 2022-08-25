@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import {
     Collapse,
@@ -6,7 +6,8 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem
+    NavItem,
+    NavLink
 } from 'reactstrap';
 
 const Header = props => {
@@ -28,36 +29,36 @@ const Header = props => {
                         <NavItem>
                             {
                                 homePage?
-                                <Link className="active">Home</Link>
-                                :<Link to="/">Home</Link>
+                                <NavLink className="active">Home</NavLink>
+                                :<NavLink tag={Link} to="/">Home</NavLink>
                             }
                         </NavItem>
                         <NavItem>
                             {
                                 pythonPage?
-                                <Link className="active">Python</Link>
-                                :<Link to="/python">Python</Link>
+                                <NavLink className="active">Python</NavLink>
+                                :<NavLink tag={Link} to="/python">Python</NavLink>
                             }
                         </NavItem>
                         <NavItem>
                             {
                                 javaPage?
-                                <Link className="active">Java</Link>
-                                :<Link to="/java">Java</Link>
+                                <NavLink className="active">Java</NavLink>
+                                :<NavLink tag={Link} to="/java">Java</NavLink>
                             }
                         </NavItem>
                         <NavItem>
                             {
                                 mernPage?
-                                <Link className="active">MERN</Link>
-                                :<Link to="/mern">MERN</Link>
+                                <NavLink className="active">MERN</NavLink>
+                                :<NavLink tag={Link} to="/mern">MERN</NavLink>
                             }
                         </NavItem>
                         <NavItem>
                             {
                                 projectPage?
-                                <Link className="active">Projects</Link>
-                                :<Link to="/projects">Projects</Link>
+                                <NavLink className="active">Projects</NavLink>
+                                :<NavLink tag={Link} to="/projects">Projects</NavLink>
                             }
                         </NavItem>
                     </Nav>
