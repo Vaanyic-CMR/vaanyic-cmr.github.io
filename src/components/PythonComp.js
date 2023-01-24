@@ -1,7 +1,7 @@
 const PythonComp = props => {
     return (
         <div
-            className="p-3 bg-light border border-secondary rounded d-lg-flex"
+            className="p-3 bg-light border border-secondary rounded d-md-flex"
             style={ {textAlign: "left"} }
         >
             {/* Flask, Django, MySQL */}

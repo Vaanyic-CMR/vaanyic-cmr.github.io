@@ -1,4 +1,4 @@
-import logo from "../logo.svg"
+import logo from "../../logo.svg"
 
 const Footer = props => {
     return (
@@ -9,7 +9,7 @@ const Footer = props => {
             <div className="row">
                 <div className="col">
                     <img
-                        src={ require("../images/GitHub-Mark/PNG/GitHub-Mark-32px.png") }
+                        src={ require("../../images/GitHub-Mark/PNG/GitHub-Mark-32px.png") }
                         alt="Github Icon"
                         style={ {width: "20px"} }
                     />
@@ -17,7 +17,7 @@ const Footer = props => {
                 </div>
                 <div className="col">
                     <img
-                        src={ require("../images/LinkedIn-Logos/LI-In-Bug.png") }
+                        src={ require("../../images/LinkedIn-Logos/LI-In-Bug.png") }
                         alt="LinkedIn Icon"
                         style={ {width: "20px"} }
                     />
@@ -25,7 +25,7 @@ const Footer = props => {
                 </div>
                 <div className="col">
                     <img
-                        src={ require("../images/Twitter-Logos/Twitter logo/PNG/2021 Twitter logo - blue.png") }
+                        src={ require("../../images/Twitter-Logos/Twitter logo/PNG/2021 Twitter logo - blue.png") }
                         alt="Twitter Icon"
                         style={ {width: "20px"} }
                     />

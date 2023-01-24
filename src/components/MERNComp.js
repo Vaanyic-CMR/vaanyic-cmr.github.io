@@ -1,6 +1,4 @@
-// import MERN_Logo from "../images/MERN-Logos/nodejs-new-pantone-black.svg"
-
-const MERNComp = props => {
+const MERNComp = _props => {
     return (
         <div
             className="p-3 bg-light border border-secondary rounded"
@@ -12,14 +10,8 @@ const MERNComp = props => {
             >
                 <img
                     className="m-1"
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                    alt="NodeJS Logo"
-                    style={ {height: "100px"} }
-                />
-                <img
-                    className="m-1"
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                    alt="React Logo"
+                    src="https://webimages.mongodb.com/_com_assets/cms/kusb9stg1ndrp7j53-MongoDBLogoBrand1.png?auto=format%252Ccompress"
+                    alt="MongoDB Logo"
                     style={ {height: "100px"} }
                 />
                 <img
@@ -30,8 +22,14 @@ const MERNComp = props => {
                 />
                 <img
                     className="m-1"
-                    src="https://webimages.mongodb.com/_com_assets/cms/kusb9stg1ndrp7j53-MongoDBLogoBrand1.png?auto=format%252Ccompress"
-                    alt="MongoDB Logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    alt="React Logo"
+                    style={ {height: "100px"} }
+                />
+                <img
+                    className="m-1"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                    alt="NodeJS Logo"
                     style={ {height: "100px"} }
                 />
             </div>

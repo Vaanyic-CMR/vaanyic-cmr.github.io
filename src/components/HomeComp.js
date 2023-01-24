@@ -1,6 +1,5 @@
 import ImageSlideShow from './sub_components/ImageSlideShow';
 
-
 const images = [
     {
         src: require('../images/Certifications/Southwest_CO_eSchool_Diploma.jpg'),
@@ -10,13 +9,13 @@ const images = [
     },
     {
         src: require('../images/Certifications/Pueblo_Community_College_Assosiate_Degree.jpg'),
-        altText: 'Slide 2',
+        altText: "Pueblo Community College Assosiate's Degree",
         // caption: '1',
         key: 2,
     },
     {
         src: require('../images/Certifications/Coding_Dojo_Certification.png'),
-        altText: 'Slide 3',
+        altText: 'Coding Dojo Certification',
         // caption: '1',
         key: 3,
     },
@@ -28,12 +27,16 @@ const HomeComp = _props => {
             className="p-3 bg-light border border-secondary rounded"
             style={ {textAlign: "left"} }
         >
-            <img
+            <div
                 className="border border-secondary rounded text-start"
-                src="https://media-exp2.licdn.com/dms/image/C5616AQGmt9WxAYADpg/profile-displaybackgroundimage-shrink_350_1400/0/1634251789632?e=1662595200&v=beta&t=3UhhqCAklIMR4opFqmR4EGpI2_EZD02hsIrUWsrce1A"
-                alt="Banner"
-                style={ {width: "100%"} }
-            />
+                style={{ width: "100%", aspectRatio: "16/4", overflow: 'hidden' }}
+            >
+                <img
+                    src={ require("../images/banner.jpg") }
+                    alt="Banner"
+                    style={{ position: "relative", top: "-70%", width: "100%" }}
+                />
+            </div>
             <div className="m-5">
                 <h3>Overview</h3>
                 <p className="mx-4">

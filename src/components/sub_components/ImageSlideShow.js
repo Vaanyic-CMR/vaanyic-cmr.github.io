@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
+    Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption,
+    Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'reactstrap';
 
 const ImageSlideShow = props => {
     const { images } = props;
 
+    // ---------- Carousel Controls.
     // Carousel useStates
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -32,7 +30,11 @@ const ImageSlideShow = props => {
         setActiveIndex(newIndex);
     };
 
-    // Define Carousel Slides
+    // ---------- Modal Controls.
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => setModal(!modal);
+
+    // ---------- Define Carousel Slides
     const slides = images.map((image) => {
         return (
             <CarouselItem
@@ -40,18 +42,22 @@ const ImageSlideShow = props => {
                 onExited={() => setAnimating(false)}
                 key={image.src}
             >
-            <img className="d-block w-100" src={image.src} alt={image.altText} />
-            <CarouselCaption
-                captionText={image.caption}
-                captionHeader={image.caption}
-            />
+                <img
+                    className="d-block w-100"
+                    src={image.src}
+                    alt={image.altText}
+                    onClick={toggleModal}
+                />
+                <CarouselCaption
+                    captionText={image.caption}
+                    captionHeader={image.caption}
+                />
             </CarouselItem>
         );
     });
-
-    return(
+    const carousel = () => {return(
         <Carousel
-            className="my-2 p-5 carousel-fade border border-secondary rounded"
+            className="my-lg-2 p-lg-5 carousel-fade border border-secondary rounded"
             activeIndex={activeIndex}
             next={next}
             previous={previous}
@@ -78,7 +84,19 @@ const ImageSlideShow = props => {
                 directionText="Next"
                 onClickHandler={next}
             />
-        </Carousel>
+        </Carousel>)
+    }
+
+    return(
+        <div>
+            {carousel()}
+            <Modal isOpen={modal} toggle={toggleModal} size="xl" centered>
+                {/* <ModalHeader toggle={toggleModal}>{images[activeIndex].altText}</ModalHeader> */}
+                <ModalBody>
+                    {carousel()}
+                </ModalBody>
+            </Modal>
+        </div>
     );
 };
 export default ImageSlideShow;

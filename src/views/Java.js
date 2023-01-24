@@ -1,6 +1,6 @@
 import JavaComp from "../components/JavaComp";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/sub_components/Header";
+import Footer from "../components/sub_components/Footer";
 
 const Java = props => {
     return (
