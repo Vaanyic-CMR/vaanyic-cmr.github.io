@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.53a5b063.css",
-    "main.js": "/static/js/main.f2b1c217.js",
+    "main.js": "/static/js/main.d36b065d.js",
     "static/js/787.f8a4bada.chunk.js": "/static/js/787.f8a4bada.chunk.js",
     "static/media/Southwest_CO_eSchool_Diploma.jpg": "/static/media/Southwest_CO_eSchool_Diploma.f8ff567288b87b28d38c.jpg",
     "static/media/Pueblo_Community_College_Assosiate_Degree.jpg": "/static/media/Pueblo_Community_College_Assosiate_Degree.11332eea054cece9a7a9.jpg",
+    "static/media/banner.jpg": "/static/media/banner.087130c4fefc008e645c.jpg",
     "static/media/Coding_Dojo_Certification.png": "/static/media/Coding_Dojo_Certification.9de1efd6aba2066f0dc6.png",
     "static/media/image_2.png": "/static/media/image_2.ed9f69c30d644697d77a.png",
     "static/media/image_3.png": "/static/media/image_3.0dba6871013efa1735e7.png",
@@ -17,11 +18,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.53a5b063.css.map": "/static/css/main.53a5b063.css.map",
-    "main.f2b1c217.js.map": "/static/js/main.f2b1c217.js.map",
+    "main.d36b065d.js.map": "/static/js/main.d36b065d.js.map",
     "787.f8a4bada.chunk.js.map": "/static/js/787.f8a4bada.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53a5b063.css",
-    "static/js/main.f2b1c217.js"
+    "static/js/main.d36b065d.js"
   ]
 }
